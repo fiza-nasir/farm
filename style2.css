@@ -1,0 +1,144 @@
+.buttons .btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 5px;
+  font-size: 14px;
+    font-weight: 600;
+  margin: 10px;
+border: .1rem solid #2f4f26;
+    color: #2f4f26;
+}
+
+.buttons .btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2f4f26;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 10px;
+    color: #fff;
+}
+
+.chicken-section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f5ef;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  max-width: 45%;
+}
+
+.large-image {
+  width: 100%;
+}
+
+.small-image {
+  position: absolute;
+  bottom: 100px;
+  right: -50px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    margin-left: 60px;
+  flex: 1;
+  max-width: 55%;
+}
+
+.text-container h2 {
+  font-size: 36px;
+  color: #1c3f24;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.chicken-section-right .small-image {
+  position: absolute;
+  bottom: 100px;    
+  left: -50px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.chicken-section-right .text-container {
+    margin-right: 60px;
+  flex: 1;
+  max-width: 55%;
+}
+@media (max-width: 480px){
+    .chicken-section1, .chicken-section-right {
+        display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f5ef;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.image-container {
+  position: relative;
+  max-width: 45%;
+    margin-right: auto;
+}
+
+.large-image {
+  width: 100%;
+    height: 100%;
+}
+
+.small-image {
+  position: absolute;
+  bottom: 45px;
+  right: -20px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  max-width: 45%;
+    margin-left: auto;
+}
+.text-container h2 {
+  font-size: 20px;
+  color: #1c3f24;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 7px;
+  color: #333;
+}
+    .buttons .btn1, .buttons .btn2 {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+.chicken-section-right .small-image {
+  position: absolute;
+  bottom: 45px;
+  left: -20px;
+  width: 40%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+}

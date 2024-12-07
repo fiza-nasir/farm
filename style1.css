@@ -1,0 +1,130 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: auto; /* Allow horizontal scroll for small screens */
+}
+
+/* Prevent scaling on smaller devices */
+@media screen and (max-width: 1024px) {
+    body {
+        width: 1024px; /* Lock the layout width */
+    }
+}
+
+/* About Us Section */
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1024px; /* Lock width */
+}
+
+/* Banner Styling */
+.about-us-banner {
+    background-image: url('asparagus.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.about-us-banner h2 {
+    font-size: 4rem; /* Ensure consistent size */
+}
+
+/* Content Section */
+.about-us-content {
+    padding: 20px;
+    color: #333;
+    text-align: center;
+    width: 1024px; /* Lock width */
+}
+
+.about-us-content h2 {
+    color: #14532d;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-us-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Features Section */
+.allfeatures {
+    background-color: #f9f5ef;
+    width: 1024px; /* Lock width */
+}
+
+.allfeatures h1 {
+    color: #2b6a39;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 0.1rem solid #14532d;
+}
+
+/* Features Row */
+.features .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 1024px; /* Lock width */
+}
+
+.features .row .image {
+    flex: 1 1 auto; /* Allow flexible proportions */
+    width: 50%; /* Set consistent width */
+    max-width: 500px;
+}
+
+.features .row .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensure image proportions remain intact */
+}
+
+.features .row .content {
+    flex: 1 1 auto;
+    width: 50%; /* Set consistent width */
+    padding: 20px;
+}
+
+.features .content h3 {
+    color: #2b6a39;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.features .content p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .features .row {
+        flex-wrap: nowrap; /* Prevent column stacking */
+        overflow-x: scroll; /* Allow horizontal scrolling */
+    }
+
+    .features .row .image, 
+    .features .row .content {
+        width: auto; /* Let content adjust dynamically */
+    }
+
+    .features .row .image img {
+        height: auto; /* Maintain proportions */
+    }
+}
